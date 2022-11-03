@@ -92,6 +92,11 @@ public class mainPage extends javax.swing.JFrame {
         });
 
         sendArticle.setText("Send Article");
+        sendArticle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                sendArticleActionPerformed(evt);
+            }
+        });
 
         articleReview.setText("Article Review");
         articleReview.addActionListener(new java.awt.event.ActionListener() {
@@ -161,6 +166,12 @@ public class mainPage extends javax.swing.JFrame {
         xx.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_assignmentVerificationActionPerformed
+
+    private void sendArticleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendArticleActionPerformed
+        sendArticle xx = new sendArticle();
+        xx.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_sendArticleActionPerformed
 
     /**
      * @param args the command line arguments
