@@ -40,7 +40,7 @@ public class mainPage extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
-        jLabel1.setText("Group5");
+        jLabel1.setText("Group 5");
 
         Denta.setText("Denta Bramasta Hidayat");
 
