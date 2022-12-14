@@ -5,6 +5,8 @@
 package e.review;
 
 import javax.swing.JOptionPane;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 /**
  *
@@ -15,10 +17,15 @@ public class EReview {
         try{
             String username = "root";
             String pass = "";
+            String sqlconn = "jdbc:mysql://localhost:3307/PPL";
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            Connection conn = DriverManager.getConnection(sqlconn, username, pass);
+            return conn;
         }
         catch(Exception e){
-            JOptionPane.showMessageDialog(parentComponent, e);
+            JOptionPane.showMessageDialog(null, e);
         }
+        return null;
     }
 
     /**
