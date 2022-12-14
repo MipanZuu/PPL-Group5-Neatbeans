@@ -32,6 +32,7 @@ public class EReview {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        JOptionPane.showMessageDialog(null, "Connection Established!");
         new mainPage().setVisible(true);
     }
     
