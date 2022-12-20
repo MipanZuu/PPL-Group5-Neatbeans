@@ -32,22 +32,29 @@ public class mainPage extends javax.swing.JFrame {
         Fina = new javax.swing.JLabel();
         Azka = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        orderHistory = new javax.swing.JButton();
-        assignmentVerification = new javax.swing.JButton();
-        sendArticle = new javax.swing.JButton();
-        articleReview = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Helvetica Neue", 0, 24)); // NOI18N
         jLabel1.setText("Group 5");
 
+        Denta.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Denta.setText("Denta Bramasta Hidayat");
 
+        Fina.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Fina.setText("Shafina Chaerunnisa");
 
+        Azka.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Azka.setText("Muhammad Azka Aysar S");
 
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel5.setText("Mochammed Fachry Dwi Handoko");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -57,11 +64,11 @@ public class mainPage extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Denta)
-                    .addComponent(Fina)
-                    .addComponent(Azka)
-                    .addComponent(jLabel5))
-                .addContainerGap(227, Short.MAX_VALUE))
+                    .addComponent(Denta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Fina, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Azka, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, 422, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -77,100 +84,106 @@ public class mainPage extends javax.swing.JFrame {
                 .addContainerGap(8, Short.MAX_VALUE))
         );
 
-        orderHistory.setText("Order History");
-        orderHistory.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                orderHistoryActionPerformed(evt);
-            }
-        });
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 3, 24)); // NOI18N
+        jLabel2.setText("Welcome to E-Review");
 
-        assignmentVerification.setText("Assignment Verification");
-        assignmentVerification.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                assignmentVerificationActionPerformed(evt);
-            }
-        });
+        jMenu1.setText("Menu");
 
-        sendArticle.setText("Send Article");
-        sendArticle.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem1.setText("Order History");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                sendArticleActionPerformed(evt);
+                jMenuItem1ActionPerformed(evt);
             }
         });
+        jMenu1.add(jMenuItem1);
 
-        articleReview.setText("Article Review");
-        articleReview.addActionListener(new java.awt.event.ActionListener() {
+        jMenuItem2.setText("Article Review");
+        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                articleReviewActionPerformed(evt);
+                jMenuItem2ActionPerformed(evt);
             }
         });
+        jMenu1.add(jMenuItem2);
+
+        jMenuItem3.setText("Send Article");
+        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem3ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem3);
+
+        jMenuItem4.setText("Assignment Verification");
+        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem4ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem4);
+
+        jMenuBar1.add(jMenu1);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(82, 82, 82))
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap(117, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(300, 300, 300)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(orderHistory)
-                        .addGap(51, 51, 51)
-                        .addComponent(articleReview)
-                        .addGap(61, 61, 61)
-                        .addComponent(sendArticle)
-                        .addGap(45, 45, 45)
-                        .addComponent(assignmentVerification)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(187, 187, 187))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(105, 105, 105))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel1)
+                        .addGap(277, 277, 277))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
+                .addGap(29, 29, 29)
+                .addComponent(jLabel2)
+                .addGap(24, 24, 24)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(orderHistory)
-                    .addComponent(assignmentVerification)
-                    .addComponent(sendArticle)
-                    .addComponent(articleReview))
-                .addGap(45, 45, 45))
+                .addContainerGap(52, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void orderHistoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_orderHistoryActionPerformed
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
         orderHistory xx = new orderHistory();
         xx.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_orderHistoryActionPerformed
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
-    private void articleReviewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_articleReviewActionPerformed
+    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+        // TODO add your handling code here:
         articleReview xx = new articleReview();
         xx.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_articleReviewActionPerformed
+    }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void assignmentVerificationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_assignmentVerificationActionPerformed
-        assignmentVerification xx = new assignmentVerification();
-        xx.setVisible(true);
-        this.dispose();
-    }//GEN-LAST:event_assignmentVerificationActionPerformed
-
-    private void sendArticleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sendArticleActionPerformed
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        // TODO add your handling code here:
         sendArticle xx = new sendArticle();
         xx.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_sendArticleActionPerformed
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
+
+    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
+        // TODO add your handling code here:
+        assignmentVerification xx = new assignmentVerification();
+        xx.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -211,12 +224,15 @@ public class mainPage extends javax.swing.JFrame {
     private javax.swing.JLabel Azka;
     private javax.swing.JLabel Denta;
     private javax.swing.JLabel Fina;
-    private javax.swing.JButton articleReview;
-    private javax.swing.JButton assignmentVerification;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton orderHistory;
-    private javax.swing.JButton sendArticle;
     // End of variables declaration//GEN-END:variables
 }
